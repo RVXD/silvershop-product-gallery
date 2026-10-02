@@ -1,0 +1,10 @@
+en:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Gallery images'
+    SaveFirst: 'Save first, then add gallery images here.'
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Gallery Image'
+    PLURALNAME: 'Gallery Images'
+    Caption: 'Caption (alt text)'
+    CaptionColumn: 'Caption'
+    ImageColumn: 'Image'

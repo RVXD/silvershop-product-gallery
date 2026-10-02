@@ -1,0 +1,11 @@
+---
+Name: silvershop-product-gallery
+After:
+  - '#shopconfig'
+---
+SilverShop\Page\Product:
+  extensions:
+    - SilverShop\ProductGallery\Extension\GalleryExtension
+SilverShop\Model\Variation\Variation:
+  extensions:
+    - SilverShop\ProductGallery\Extension\GalleryExtension
