@@ -46,6 +46,22 @@ Each owner gets:
 - `$AllImages` — an `ArrayList` of `Image` objects: the primary `Image` (if set) followed by the gallery images. A
   variation with no gallery of its own falls back to its product's gallery.
 
+### Ready-made include
+
+The module ships a simple default template, `SilverShop\Includes\GalleryImages`, that renders **one large image with a
+thumbnail grid of all images below it** (small inline CSS, no JavaScript — thumbnails link to the full-size image). Drop
+it into your product template in place of the standard image:
+
+```ss
+<div class="silvershop-product__media">
+    <% include SilverShop\Includes\GalleryImages %>
+</div>
+```
+
+Override the include in your theme to restyle it (e.g. add a lightbox / zoom / variation-swap with your own JS).
+
+### Or render it yourself
+
 The accessors return plain `Image` objects, so you size them yourself. A bare example:
 
 ```ss
