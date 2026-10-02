@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace SilverShop\ProductGallery\Extension;
 
+use Colymba\BulkUpload\BulkUploader;
 use SilverShop\Model\Variation\Variation;
 use SilverShop\ProductGallery\Model\GalleryItem;
 use SilverStripe\Core\Extension;
@@ -55,7 +56,10 @@ class GalleryExtension extends Extension
         }
 
         $config = GridFieldConfig_RecordEditor::create();
+        // Drag-to-reorder the rows (writes GalleryItem.Sort).
         $config->addComponent(GridFieldOrderableRows::create('Sort'));
+        // Multi-file drag-and-drop: each dropped file creates a GalleryItem with its Image set.
+        $config->addComponent(new BulkUploader('Image'));
 
         $this->addGalleryField($fields, GridField::create(
             'GalleryItems',

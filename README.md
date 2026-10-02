@@ -12,7 +12,8 @@ zoom, grid, …).
 
 - `silvershop/core` ^6 (SilverStripe CMS 6)
 - PHP ^8.3
-- `symbiote/silverstripe-gridfieldextensions` ^5 (pulled in by core; used for drag-to-sort)
+- `symbiote/silverstripe-gridfieldextensions` ^5 (drag-to-sort; pulled in by core)
+- `colymba/gridfield-bulk-editing-tools` ^5.1 (multi-file bulk upload)
 
 ## Installation
 
@@ -28,9 +29,13 @@ Then run `dev/build?flush=1`.
   attaches to its owner through a **polymorphic `Parent` has_one**, so the same class serves both products and
   variations.
 - A `GalleryExtension` is applied to `SilverShop\Page\Product` and `SilverShop\Model\Variation\Variation`, adding a
-  `GalleryItems` has_many edited in a GridField with drag-to-sort (`GridFieldOrderableRows`).
-  - On a **product** the grid is on the **Images** tab.
-  - On a **variation** the grid is in its **edit form** (open the variation row to manage its images).
+  `GalleryItems` has_many edited in a GridField with:
+  - **drag-to-reorder** rows (`GridFieldOrderableRows`, writes `Sort`),
+  - **multi-file bulk upload** — drag a batch of images onto the grid and each becomes a `GalleryItem`
+    (`colymba` `BulkUploader`); edit captions / reorder afterwards,
+  - add/edit/delete single records with a caption.
+  - On a **product** the grid is on the **Images** tab; on a **variation** it's in its **edit form** (open the
+    variation row to manage its images).
 - Core's existing single `Image` stays as the **primary / featured** image; the gallery is additional.
 
 ## Rendering (your theme)
