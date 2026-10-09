@@ -1,0 +1,10 @@
+fr:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Images de la galerie'
+    SaveFirst: "Enregistrez d'abord, puis ajoutez des images de galerie ici."
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Image de galerie'
+    PLURALNAME: 'Images de galerie'
+    Caption: 'Légende (texte alternatif)'
+    CaptionColumn: 'Légende'
+    ImageColumn: 'Image'

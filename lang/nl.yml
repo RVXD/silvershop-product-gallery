@@ -1,0 +1,10 @@
+nl:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Galerijafbeeldingen'
+    SaveFirst: 'Sla eerst op en voeg hier daarna galerijafbeeldingen toe.'
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Galerijafbeelding'
+    PLURALNAME: 'Galerijafbeeldingen'
+    Caption: 'Bijschrift (alt-tekst)'
+    CaptionColumn: 'Bijschrift'
+    ImageColumn: 'Afbeelding'

@@ -1,0 +1,10 @@
+es:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Imágenes de la galería'
+    SaveFirst: 'Guarde primero y luego añada aquí las imágenes de la galería.'
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Imagen de galería'
+    PLURALNAME: 'Imágenes de galería'
+    Caption: 'Leyenda (texto alternativo)'
+    CaptionColumn: 'Leyenda'
+    ImageColumn: 'Imagen'

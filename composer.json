@@ -1,6 +1,6 @@
 {
     "name": "silvershop/product-gallery",
-    "description": "Sortable image galleries for SilverShop products and variations. Backend only — the data model, CMS admin and template accessors; bring your own frontend.",
+    "description": "Sortable image galleries for SilverShop products and variations: data model, CMS admin with drag-sort + bulk upload, template accessors, and an overridable frontend include.",
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "keywords": ["silverstripe", "silvershop", "ecommerce", "product", "variation", "images", "gallery"],
@@ -19,7 +19,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^11.3",
-        "squizlabs/php_codesniffer": "^3.7"
+        "squizlabs/php_codesniffer": "^3.7",
+        "silverstripe/sqlite3": "^4"
     },
     "autoload": {
         "psr-4": {
@@ -30,6 +31,14 @@
     "extra": {
         "branch-alias": {
             "dev-main": "1.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true,
+            "php-http/discovery": false
         }
     },
     "minimum-stability": "dev",

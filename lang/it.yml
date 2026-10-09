@@ -1,0 +1,10 @@
+it:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Immagini della galleria'
+    SaveFirst: 'Salva prima, poi aggiungi qui le immagini della galleria.'
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Immagine della galleria'
+    PLURALNAME: 'Immagini della galleria'
+    Caption: 'Didascalia (testo alternativo)'
+    CaptionColumn: 'Didascalia'
+    ImageColumn: 'Immagine'

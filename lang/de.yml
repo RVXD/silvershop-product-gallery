@@ -1,0 +1,10 @@
+de:
+  SilverShop\ProductGallery\Extension\GalleryExtension:
+    GalleryImages: 'Galeriebilder'
+    SaveFirst: 'Zuerst speichern, dann hier Galeriebilder hinzufügen.'
+  SilverShop\ProductGallery\Model\GalleryItem:
+    SINGULARNAME: 'Galeriebild'
+    PLURALNAME: 'Galeriebilder'
+    Caption: 'Bildunterschrift (Alt-Text)'
+    CaptionColumn: 'Bildunterschrift'
+    ImageColumn: 'Bild'
