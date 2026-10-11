@@ -44,6 +44,10 @@ class GalleryExtension extends Extension
     {
         $owner = $this->getOwner();
 
+        // Drop the auto-scaffolded GalleryItems grid and its empty "Gallery items" tab; we render our own gallery
+        // (below) on the Images tab, next to the core primary Product Image.
+        $fields->removeByName('GalleryItems');
+
         // A has_many needs the owner to exist before rows can be attached to it.
         if (!$owner->isInDB()) {
             $this->addGalleryField($fields, LiteralField::create(
